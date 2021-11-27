@@ -1,16 +1,24 @@
-import React from "react";
+import React, {MouseEvent} from "react";
 import "./style.css";
 
 const RotatingNavigation = () => {
+  const [show, setShow] = React.useState(true);
+
+  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    setShow((prev) => !prev);
+    console.log(show);
+  }
+
   return (
     <>
-      <div className="container show-nav">
+      <div className={`container ${show ? 'show-nav' : '' }`}>
         <div className="circle-container">
           <div className="circle">
-            <button id="close">
+            <button type="button" id="close" onClick={handleClick}>
               <i className="fas fa-times"></i>
             </button>
-            <button id="close">
+            <button id="open" onClick={handleClick}>
               <i className="fas fa-bars"></i>
             </button>
           </div>

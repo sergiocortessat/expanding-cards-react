@@ -2,7 +2,9 @@ import React from "react";
 import "./style.css";
 
 const ScrollAnimation = () => {
-  const [windowHeight, setWindowHeight] = React.useState<number>(0);
+  const [windowHeight, setWindowHeight] = React.useState<number>(
+    (window.innerHeight / 5) * 4
+  );
 
   const [boxHeight, setBoxHeight] = React.useState<any>({ top: Number });
 
@@ -19,16 +21,33 @@ const ScrollAnimation = () => {
     { box: "box10", top: 0 },
   ];
 
-  console.log(windowHeight);
+  const boxes = document.querySelectorAll(".box");
+
+  // console.log(windowHeight);
   const inputRef = React.useRef<any>();
   const scrollHandler = () => {
     setWindowHeight((window.innerHeight / 5) * 4);
-    const boxes = document.querySelectorAll(".box");
-    boxes.forEach((box: any, index) => {
-      // console.log(box.offsetTop);
-      boxesSet[index].top = box.offsetTop;
-      console.log(boxesSet);
-    });
+
+    boxes.forEach((box,index) => {
+      const boxTop = box.getBoundingClientRect().top;
+
+      if (boxTop < windowHeight) {
+        boxesSet[index].top = boxTop;
+      } else {
+        boxesSet[index].top = 0;
+      }
+    })
+    console.log(boxesSet);;
+
+    // const boxes = document.querySelectorAll(".box");
+    // boxes.forEach((box: any, index) => {
+    //   // console.log(box.offsetTop);
+    //   if(boxesSet[index].top === 0){
+    //   boxesSet[index].top = box.offsetTop;
+    //   }
+
+    // })
+    // console.log(boxesSet);
   };
   React.useEffect(() => {
     window.addEventListener("scroll", scrollHandler, true);
@@ -39,12 +58,13 @@ const ScrollAnimation = () => {
   }, []);
 
   // console.log(windowHeight);
-  // console.log(boxesSet);
+  // console.log(boxes);
+  console.log(boxesSet);
   return (
     <>
       <h1>Scroll to see animation</h1>
-      {boxesSet.map((box: any , index:number) => (
-        <div key={index} className={`box ${box.top < windowHeight && box.top > 0 ? 'show' : ''}`}>
+      {boxesSet.map((box: any, index: number) => (
+        <div key={index} className={`box`}>
           <h2>{box.box}</h2>
         </div>
       ))}

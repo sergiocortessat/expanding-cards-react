@@ -30,6 +30,7 @@ body {
 .container a {
   text-decoration: none;
   color: lightblue;
+  margin-left: 7px;
 }
 
 .btn {
@@ -42,6 +43,7 @@ body {
   font-size: 16px;
   border: 0;
   border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .btn:focus {

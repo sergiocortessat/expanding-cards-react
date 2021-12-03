@@ -8,6 +8,8 @@ import RotatingNavigation from "./CSS,HTML/RotatingNavigation/RotatingNavigation
 import ScrollAnimation from "./CSS,HTML/ScrollAnimation/ScrollAnimation";
 import SoundBoard from "./CSS,HTML/SoundBoard/SoundBoard";
 import SplitLandingPage from "./CSS,HTML/SplitLandingPage/SplitLandingPage";
+import EventKeyCodes from "./CSS,HTML/EventKeyCodes/EventKeyCodes";
+import FAQCollapse from "./CSS,HTML/FAQCollapse/FAQCollapse";
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
       {/* <SplitLandingPage />   */}
       {/* <FormWaveAnimation /> */}
       {/* <SoundBoard url={'https://freesound.org/data/displays/316/316873_3995641_wave_L.png'} /> */}
-      <DadJokes />
+      {/* <DadJokes /> */}
+      {/* <EventKeyCodes /> */}
+      <FAQCollapse />
     </>
   );
 }

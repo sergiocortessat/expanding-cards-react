@@ -10,6 +10,7 @@ import SoundBoard from "./CSS,HTML/SoundBoard/SoundBoard";
 import SplitLandingPage from "./CSS,HTML/SplitLandingPage/SplitLandingPage";
 import EventKeyCodes from "./CSS,HTML/EventKeyCodes/EventKeyCodes";
 import FAQCollapse from "./CSS,HTML/FAQCollapse/FAQCollapse";
+import AnimatedNavigation from "./CSS,HTML/AnimatedNavigation/AnimatedNavigation";
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <SoundBoard url={'https://freesound.org/data/displays/316/316873_3995641_wave_L.png'} /> */}
       {/* <DadJokes /> */}
       {/* <EventKeyCodes /> */}
-      <FAQCollapse />
+      {/* <FAQCollapse /> */}
+      <AnimatedNavigation />
     </>
   );
 }

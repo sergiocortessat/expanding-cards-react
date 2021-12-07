@@ -11,6 +11,7 @@ import SplitLandingPage from "./CSS,HTML/SplitLandingPage/SplitLandingPage";
 import EventKeyCodes from "./CSS,HTML/EventKeyCodes/EventKeyCodes";
 import FAQCollapse from "./CSS,HTML/FAQCollapse/FAQCollapse";
 import AnimatedNavigation from "./CSS,HTML/AnimatedNavigation/AnimatedNavigation";
+import IncrementingCounter from "./CSS,HTML/IncrementingCounter/IncrementingCounter";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <DadJokes /> */}
       {/* <EventKeyCodes /> */}
       {/* <FAQCollapse /> */}
-      <AnimatedNavigation />
+      {/* <AnimatedNavigation /> */}
+      <IncrementingCounter  />
     </>
   );
 }

@@ -12,6 +12,7 @@ import EventKeyCodes from "./CSS,HTML/EventKeyCodes/EventKeyCodes";
 import FAQCollapse from "./CSS,HTML/FAQCollapse/FAQCollapse";
 import AnimatedNavigation from "./CSS,HTML/AnimatedNavigation/AnimatedNavigation";
 import IncrementingCounter from "./CSS,HTML/IncrementingCounter/IncrementingCounter";
+import ButtonRippleEffect from "./CSS,HTML/ButtonRippleEffect/ButtonRippleEffect";
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
       {/* <RotatingNavigation /> */}
       {/* <HiddenSearchWidget /> */}
       {/* <BlurryLoading  /> */}
-       {/* <ScrollAnimation /> */}
-      {/* <ScrollAnimation /> */} {/*not finished. Problems with the scroll event listener on window getBoundClientRect() */}
+      {/* <ScrollAnimation /> */}
+      {/* <ScrollAnimation /> */}{" "}
+      {/*not finished. Problems with the scroll event listener on window getBoundClientRect() */}
       {/* <SplitLandingPage />   */}
       {/* <FormWaveAnimation /> */}
       {/* <SoundBoard url={'https://freesound.org/data/displays/316/316873_3995641_wave_L.png'} /> */}
@@ -30,7 +32,8 @@ function App() {
       {/* <EventKeyCodes /> */}
       {/* <FAQCollapse /> */}
       {/* <AnimatedNavigation /> */}
-      <IncrementingCounter  />
+      {/* <IncrementingCounter  /> */}
+      <ButtonRippleEffect />
     </>
   );
 }

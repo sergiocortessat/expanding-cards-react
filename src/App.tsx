@@ -13,6 +13,9 @@ import FAQCollapse from "./CSS,HTML/FAQCollapse/FAQCollapse";
 import AnimatedNavigation from "./CSS,HTML/AnimatedNavigation/AnimatedNavigation";
 import IncrementingCounter from "./CSS,HTML/IncrementingCounter/IncrementingCounter";
 import ButtonRippleEffect from "./CSS,HTML/ButtonRippleEffect/ButtonRippleEffect";
+import DragNDrop from "./CSS,HTML/DragNDrop/DragNDrop";
+import KineticLoader from "./CSS,HTML/KineticLoader/KineticLoader";
+import ContentPlaceholder from "./CSS,HTML/ContentPlaceholder/ContentPlaceholder";
 
 function App() {
   return (
@@ -33,7 +36,10 @@ function App() {
       {/* <FAQCollapse /> */}
       {/* <AnimatedNavigation /> */}
       {/* <IncrementingCounter  /> */}
-      <ButtonRippleEffect />
+      {/* <ButtonRippleEffect buttonName={"Click Here"} textColor={'white'} backgroundColor={'purple'} borderRadius={'10px'}/> */}
+      {/* <DragNDrop /> */}
+      {/* <KineticLoader /> */}
+      <ContentPlaceholder />  {/* could be done yet */}
     </>
   );
 }

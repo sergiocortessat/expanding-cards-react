@@ -16,6 +16,7 @@ import ButtonRippleEffect from "./CSS,HTML/ButtonRippleEffect/ButtonRippleEffect
 import DragNDrop from "./CSS,HTML/DragNDrop/DragNDrop";
 import KineticLoader from "./CSS,HTML/KineticLoader/KineticLoader";
 import ContentPlaceholder from "./CSS,HTML/ContentPlaceholder/ContentPlaceholder";
+import StickyNavbar from "./CSS,HTML/StickyNavbar/StickyNavbar";
 
 function App() {
   return (
@@ -39,7 +40,8 @@ function App() {
       {/* <ButtonRippleEffect buttonName={"Click Here"} textColor={'white'} backgroundColor={'purple'} borderRadius={'10px'}/> */}
       {/* <DragNDrop /> */}
       {/* <KineticLoader /> */}
-      <ContentPlaceholder />  {/* could be done yet */}
+      {/* <ContentPlaceholder />  could be done yet */}
+      <StickyNavbar />
     </>
   );
 }

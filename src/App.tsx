@@ -17,6 +17,7 @@ import DragNDrop from "./CSS,HTML/DragNDrop/DragNDrop";
 import KineticLoader from "./CSS,HTML/KineticLoader/KineticLoader";
 import ContentPlaceholder from "./CSS,HTML/ContentPlaceholder/ContentPlaceholder";
 import StickyNavbar from "./CSS,HTML/StickyNavbar/StickyNavbar";
+import DoubleVerticalSlider from "./CSS,HTML/DoubleVerticalSlider/DoubleVerticalSlider";
 
 function App() {
   return (
@@ -41,7 +42,8 @@ function App() {
       {/* <DragNDrop /> */}
       {/* <KineticLoader /> */}
       {/* <ContentPlaceholder />  could be done yet */}
-      <StickyNavbar />
+      {/* <StickyNavbar /> */}
+      <DoubleVerticalSlider />
     </>
   );
 }

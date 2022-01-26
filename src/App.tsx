@@ -18,6 +18,8 @@ import KineticLoader from "./CSS,HTML/KineticLoader/KineticLoader";
 import ContentPlaceholder from "./CSS,HTML/ContentPlaceholder/ContentPlaceholder";
 import StickyNavbar from "./CSS,HTML/StickyNavbar/StickyNavbar";
 import DoubleVerticalSlider from "./CSS,HTML/DoubleVerticalSlider/DoubleVerticalSlider";
+import ToastNotification from "./CSS,HTML/ToastNotification/ToastNotification";
+import GitHubProfile from "./CSS,HTML/GitHubProfile/GitHubProfile";
 
 function App() {
   return (
@@ -43,7 +45,9 @@ function App() {
       {/* <KineticLoader /> */}
       {/* <ContentPlaceholder />  could be done yet */}
       {/* <StickyNavbar /> */}
-      <DoubleVerticalSlider />
+      {/* <DoubleVerticalSlider /> */}
+      {/* <ToastNotification /> */}
+      <GitHubProfile />
     </>
   );
 }
